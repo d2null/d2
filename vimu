@@ -95,6 +95,9 @@ open dir in new window
 \fB:Ve dir\fR
 open dir in new vertical window
 .TP
+\fB:[vertical] res[ize] +20\fR
+increase [vertical] window size by 20
+.TP
 \fB:!shell command\fR
 execute shell command
 .TP
