@@ -1,0 +1,125 @@
+.\" Manpage for unix VIM.
+.\" Contact hitliuyi@gmail.com to correct errors or typos.
+.TH man 1 "03 Feb 2014" "1.0" "unix VIM man page"
+
+.SH VIM Commands
+
+.TP
+\fBY\fR
+copy line
+.TP
+\fBy\fR
+copy
+.TP
+\fByy\fR
+copy line
+.TP
+\fBd\fR
+cut
+.TP
+\fBP\fR
+paste above line
+.TP
+\fBp\fR
+paste below line
+.TP
+\fBdw\fR
+delete word
+.TP
+\fBG\fR
+goto end of file
+.TP
+\fBgg\fR
+top of file
+.TP
+\fBV\fR
+select lines
+.TP
+\fBv\fR
+select chars
+.TP
+\fBN\fR
+"prev" find
+.TP
+\fBn\fR
+find "next"
+.TP
+\fB[[\fR
+begin this func {
+.TP
+\fB]]\fR
+begin next func {
+.TP
+\fB%\fR
+goto matching {} <> []
+.TP
+\fB:s/Foo/Bar\fR
+find Foo replace w/ Bar
+.TP
+\fB:s/Foo/Bar/g\fR
+all instances on line
+.TP
+\fB:%s/Foo/Bar/g\fR
+apply to whole file
+.TP
+\fB:tabe file\fR
+open a new tab and edit file
+.TP
+\fBgt\fR
+goto next tab
+.TP
+\fBgT\fR
+goto prev tab
+.TP
+\fB:e file\fR
+open a new into buffer
+.TP
+\fB:bn\fR
+goto next file in buffer
+.TP
+\fB:bd\fR
+delete file in buffer
+.TP
+\fB:sp file\fR
+open file in new window
+.TP
+\fB:vsp file\fR
+open file in new vertical window
+.TP
+\fB/pattern
+"Prev" search
+.TP
+\fB?pattern
+"Next" search
+.TP
+\fBctrl-f\fR
+"Prev" page
+.TP
+\fBctrl-b\fR
+"Next" page
+.TP
+\fBw\fR
+next word, short jump
+.TP
+\fBW\fR
+next word, long jump
+.TP
+\fBb\fR
+prev word, short jump
+.TP
+\fBB\fR
+prev word, long jump
+.TP
+\fBJ\fR
+join lines
+.TP
+\fBcrtl+r\fR
+redo typing
+.TP
+\fBma\fR
+mark as 'a' at current pos
+.TP
+\fB`a\fR
+goto mark 'a'
+
+.SH VIM Display
