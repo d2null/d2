@@ -5,14 +5,11 @@
 .SH VIM Commands
 
 .TP
-\fBY\fR
+\fBY,yy\fR
 copy line
 .TP
 \fBy\fR
 copy
-.TP
-\fByy\fR
-copy line
 .TP
 \fBd\fR
 cut
@@ -112,6 +109,9 @@ prev word, long jump
 .TP
 \fBJ\fR
 join lines
+.TP
+\fBcw\fR
+remove current word and edit
 .TP
 \fBcrtl+r\fR
 redo typing
