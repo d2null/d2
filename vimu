@@ -139,6 +139,9 @@ mark as 'a' at current pos
 .TP
 \fB`a\fR
 goto mark 'a'
+.TP
+\fBctrl+o\fR
+jump back to the previous (older) location.
 
 .SH VIM Display
 .TP
