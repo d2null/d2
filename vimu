@@ -77,6 +77,12 @@ goto next file in buffer
 \fB:bd\fR
 delete file in buffer
 .TP
+\fB:buffers, ls, files\fR
+show buffers
+.TP
+\fB:buffer 2\fR
+show buffer 2
+.TP
 \fB:sp file\fR
 open file in new window
 .TP
@@ -123,3 +129,15 @@ mark as 'a' at current pos
 goto mark 'a'
 
 .SH VIM Display
+.TP
+\fB:set incsearch\fR
+inc search
+.TP
+\fB:set tabstop=2\fR
+set tab stop
+.TP
+\fB:set ignorecase\fR
+set ignore case
+.TP
+\fB:set nu\fR
+show line number
