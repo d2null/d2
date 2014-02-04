@@ -80,7 +80,7 @@ delete file in buffer
 \fB:buffers, ls, files\fR
 show buffers
 .TP
-\fB:buffer 2\fR
+\fB:b, buffer 2\fR
 show buffer 2
 .TP
 \fB:sp file\fR
@@ -88,6 +88,15 @@ open file in new window
 .TP
 \fB:vsp file\fR
 open file in new vertical window
+.TP
+\fB:Se dir\fR
+open dir in new window
+.TP
+\fB:Ve dir\fR
+open dir in new vertical window
+.TP
+\fB:!shell command\fR
+execute shell command
 .TP
 \fB/pattern
 "Prev" search
@@ -141,3 +150,6 @@ set ignore case
 .TP
 \fB:set nu\fR
 show line number
+.TP
+\fB:set nonu\fR
+hide line number
