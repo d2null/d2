@@ -24,10 +24,10 @@ paste below line
 show registers
 .TP
 \fB"+y\fR
-copy to clipboard, need X support
+copy to system clipboard, need X support
 .TP
 \fB"+p\fR
-paste from clipboard, need X support
+paste from system clipboard, need X support
 .TP
 \fBdw\fR
 delete word
@@ -67,6 +67,12 @@ up move
 .TP
 \fBl\fR
 right move
+.TP
+\fBo\fR
+add new line below and enter insert mode
+.TP
+\fBO\fR
+add new line above and enter insert mode
 .TP
 \fB^\fR
 goto first char at begin of line
@@ -189,3 +195,59 @@ show line number
 .TP
 \fB:set nonu\fR
 hide line number
+.TP
+\fB:set clipboard=unnamedplus\fR
+make all copying/pasting operations automatically copy to the system clipboard, need X support
+
+.SH VIM format
+.TP
+\fB:set (no)paste\fR
+turn (on)off autoident when pasting code
+
+.SH VIM map
+.TP
+\fBVIM mode\fR
+Normal Mode, Visual Mode, Insert Mode, Command Mode
+
+.TP
+\fBmap prefix\fR
+nore: no recurse, n: normal mode, v: visual mode, o: operator mode, i: insert mode, c: command mode
+
+.TP
+\fB:map\fR
+normal mode + visual mode + operator mode
+
+.TP
+\fB:nm[ap] src dst\fR
+normal mode
+
+.TP
+\fB:vm[ap]\fR
+visual mode
+
+.TP
+\fB:om[ap]\fR
+operator mode
+
+.TP
+\fB:map!\fR
+insert mode + command mode
+
+.TP
+\fB:lm[ap]\fR
+insert mode + command mode + Lang-Arg
+
+.TP
+\fB:im[ap]\fR
+insert mode
+
+.TP
+\fB:cm[ap]\fR
+command mode
+
+.TP
+\fB:no[remap], :nn[oremap], :vn[oremap], :on[oremap], :ino[remap], ln[oremap], :cno[remap]\fR
+
+.TP
+\fBC(ctrl), A(alt), S(shift), CR(Enter), Esc(ESC), F1(F1), Del(Delete), BS(Backspace)\fR
+e.g using F10 to create new tab is ":map <F10> <Esc>:tabnew<CR>", map Ctrl+a to a is ":map <C-a> a"
