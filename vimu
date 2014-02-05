@@ -20,6 +20,15 @@ paste above line
 \fBp\fR
 paste below line
 .TP
+\fB:reg\fR
+show registers
+.TP
+\fB"+y\fR
+copy to clipboard, need X support
+.TP
+\fB"+p\fR
+paste from clipboard, need X support
+.TP
 \fBdw\fR
 delete word
 .TP
