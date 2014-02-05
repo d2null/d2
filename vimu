@@ -47,6 +47,27 @@ begin this func {
 \fB]]\fR
 begin next func {
 .TP
+\fBh\fR
+left move
+.TP
+\fBj\fR
+down move
+.TP
+\fBk\fR
+up move
+.TP
+\fBl\fR
+right move
+.TP
+\fB^\fR
+goto first char at begin of line
+.TP
+\fB0\fR
+goto begin of line
+.TP
+\fB$\fR
+goto end of line
+.TP
 \fB%\fR
 goto matching {} <> []
 .TP
